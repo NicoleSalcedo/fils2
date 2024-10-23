@@ -1,0 +1,155 @@
+body {
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding: 0;
+    background-color: rgb(133, 121, 121);
+}
+
+header {
+    background: #8c069e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section#descricao {
+    background: #8c069e;
+    color: #fff;
+}
+
+section#planos {
+    background: rgb(133, 121, 121);
+}
+
+.plano {
+    background: #8c069e;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.plano h3 {
+    margin: 0;
+}
+
+.plano button {
+    background: rgb(133, 121, 121);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.plano button:hover {
+    background: rgb(133, 121, 121);
+}
+
+section#login form {
+    background: #8c069e;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 450px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+section#login label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+section#login input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section#login button {
+    background: rgb(133, 121, 121);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section#login button:hover {
+    background: rgb(133, 121, 121);
+}
+
+footer {
+    background: #8c069e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+img {
+	width: 50%;
+    height: 400px;
+    float: left;
+	display: grid;
+}
+
+@media (max-width: 767px) {
+    main {
+      flex-direction: column;
+    }
+    section {
+      margin-bottom: 10px;
+    }
+    form {
+      flex-direction: column;
+    }
+    input, textarea {
+      width: 100%;
+    }
+    img {
+        max-width: 1080px;
+        width: 100%;
+        height: auto;
+    }
+}
+  
+@media (max-width: 480px) {
+    header {
+      padding: 0.5em;
+    }
+    nav {
+      flex-direction: column;
+    }
+    main {
+      padding: 1em;
+    }
+    section {
+      padding: 0.5em;
+    }
+    form {
+      padding: 0.5em;
+    }
+}
